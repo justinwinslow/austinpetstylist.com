@@ -1,0 +1,15 @@
+{
+  "name": "Austin-Pet-Stylist",
+  "description": "Austin Pet Stylist",
+  "version": "0.0.1",
+  "dependencies": {
+    "lodash": null,
+    "jquery": null,
+    "modernizr": null,
+    "backbone": null,
+    "text": null,
+    "css": null,
+    "handlebars": null,
+    "require": null
+  }
+}
