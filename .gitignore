@@ -12,9 +12,8 @@ build
 # OS Generated Files #
 ######################
 
-.DS_Store?
+.DS_Store
 ehthumbs.db
-Icon?
 Thumbs.db
 
 # Packages #
