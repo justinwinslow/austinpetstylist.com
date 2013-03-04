@@ -7,7 +7,7 @@ define([
     'underscore',
     'backbone',
     'modernizr',
-    'css!../styles/module.css'
+    'css!styles/module.css'
 ],
 function($, _, Backbone, Modernizr, css) {
     if (debug) console.log('css: ', css);
