@@ -19,8 +19,6 @@ require.config({
         modernizr: 'components/modernizr/modernizr',
         text: 'components/text/text',
         css: 'components/css/css',
-        // Modules
-        somemodule: 'modules/module'
     },
     shim: {
         backbone: {
@@ -45,19 +43,14 @@ require(
         'jquery',
         'underscore',
         'backbone',
-        'handlebars',
-        'somemodule'
+        'handlebars'
     ],
     function ($, _, Backbone, Handlebars, somemodule) {
         if (debug) console.log($);
         if (debug) console.log(_);
         if (debug) console.log(Backbone);
         if (debug) console.log(Handlebars);
-        if (debug) console.log(somemodule);
 
         window.myApp = window.myApp = {};
-
-        myApp.myModule = new somemodule.view.main({name: 'My New Module'});
-        myApp.myModule.trigger('myEvent', {event: 'myEvent'});
     }
 );
