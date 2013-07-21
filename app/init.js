@@ -44,19 +44,16 @@ require(
     'underscore',
     'backbone',
     'handlebars',
-    'modules/fbUser'
+    'modules/fbFeed'
   ],
-  function ($, _, Backbone, Handlebars, fbUser) {
-    if (debug) console.log($);
-    if (debug) console.log(_);
-    if (debug) console.log(Backbone);
-    if (debug) console.log(Handlebars);
-    if (debug) console.log(fbUser);
-
+  function ($, _, Backbone, Handlebars, fbFeed) {
     window.myApp = window.myApp = {};
 
     myApp.modules = {};
 
-    myApp.modules.jade = new fbUser.model();
+    myApp.modules.jade = new fbFeed.View({model: new fbFeed.Model()});
+
+    console.log(myApp.modules.jade);
+    $('.content > div').append(myApp.modules.jade.$el);
   }
 );
